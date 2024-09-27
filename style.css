@@ -19,7 +19,7 @@ body {
 .nav-button {
     display: inline-block;
     padding: 20px;         /* Lisää tilaa, jotta painikkeet näyttävät suuremmilta */
-    width: 150px;          /* Kiinteä leveys, jotta painikkeet ovat neliömäisiä */
+    width: 150px;          /* Kiinteä leveys, jotta painikkeet ovat neliömäisiä suuremmilla näytöillä */
     text-align: center;    /* Tekstin keskitys */
     background-color: #b7cfdc; /* Misty Blue painikkeiden taustaväri */
     color: white;          /* Tekstin väri */
@@ -27,6 +27,8 @@ body {
     font-weight: bold;     /* Tekstin lihavointi */
     border-radius: 8px;    /* Pyöristää hieman kulmia */
     transition: background-color 0.3s ease; /* Pehmeä hover-efekti */
+    font-size: 16px;       /* Tekstin koko */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Pieni varjo painikkeille */
 }
 
 /* Hover-efekti: muuttaa taustavärin */
@@ -34,14 +36,30 @@ body {
     background-color: #98b6c8; /* Tummempi sininen hover-tilassa */
 }
 
-/* Neliömäisten painikkeiden responsiivisuus: kaventuu pienillä näytöillä */
+/* Responsiivisuus: pienemmät näytöt kuten tabletit ja puhelimet */
+@media (max-width: 1024px) {
+    .nav-button {
+        width: 45%;         /* Vie lähes puolet rivistä tableteilla (n. 2 painiketta rinnakkain) */
+    }
+}
+
 @media (max-width: 600px) {
     .nav-button {
-        width: 100%;       /* Vie koko tilan pienillä näytöillä */
-        padding: 15px;     /* Pienempi padding mobiilissa */
+        width: 100%;        /* Vie koko tilan pienemmillä näytöillä, yksi painike per rivi */
+        padding: 15px;      /* Pienempi padding mobiilissa */
     }
 
     nav {
         flex-direction: column; /* Laittaa painikkeet päällekkäin mobiilissa */
+        gap: 15px;              /* Lisää hieman väliä painikkeiden väliin mobiilissa */
     }
+}
+
+/* Yleiset responsiiviset säädöt */
+h1 {
+    font-size: 2em;  /* Skaalautuva otsikkokoko */
+}
+
+p {
+    font-size: 1.1em;  /* Hieman isompi teksti, joka on helppo lukea */
 }
