@@ -70,7 +70,7 @@ nav {
 
     /* Piilotetaan teksti mobiililaitteilla */
     .nav-button::after {
-        content: 'Pikavinkit';          /* Tyhjennetään tekstin jälkeinen sisältö */
+        content: '💡';          /* Tyhjennetään tekstin jälkeinen sisältö */
     }
 
     nav {
