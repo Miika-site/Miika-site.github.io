@@ -15,17 +15,33 @@ body {
     background-color: #d9e4ec; /* Blue Gray taustaväri muille sivuille */
 }
 
-/* Navigointivalikko */
-nav {
-    margin-top: 20px;
+/* Neliönmuotoiset painikkeet */
+.nav-button {
+    display: inline-block;
+    padding: 20px;         /* Lisää tilaa, jotta painikkeet näyttävät suuremmilta */
+    width: 150px;          /* Kiinteä leveys, jotta painikkeet ovat neliömäisiä */
+    text-align: center;    /* Tekstin keskitys */
+    background-color: #b7cfdc; /* Misty Blue painikkeiden taustaväri */
+    color: white;          /* Tekstin väri */
+    text-decoration: none; /* Poistaa alleviivauksen */
+    font-weight: bold;     /* Tekstin lihavointi */
+    border-radius: 8px;    /* Pyöristää hieman kulmia */
+    transition: background-color 0.3s ease; /* Pehmeä hover-efekti */
 }
 
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #007BFF; /* Linkkien väri */
+/* Hover-efekti: muuttaa taustavärin */
+.nav-button:hover {
+    background-color: #98b6c8; /* Tummempi sininen hover-tilassa */
 }
 
-nav a:hover {
-    text-decoration: underline; /* Hover-efekti */
+/* Neliömäisten painikkeiden responsiivisuus: kaventuu pienillä näytöillä */
+@media (max-width: 600px) {
+    .nav-button {
+        width: 100%;       /* Vie koko tilan pienillä näytöillä */
+        padding: 15px;     /* Pienempi padding mobiilissa */
+    }
+
+    nav {
+        flex-direction: column; /* Laittaa painikkeet päällekkäin mobiilissa */
+    }
 }
