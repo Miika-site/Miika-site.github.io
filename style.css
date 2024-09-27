@@ -1,33 +1,39 @@
-<link rel="stylesheet" href="style.css">
+/* Yleiset tyylit keholle ja tekstille */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    color: #000000; /* Tekstin väri */
+    color: #333;
+    box-sizing: border-box; /* Varmistaa, että marginaalit ja paddingit lasketaan oikein */
 }
 
-/* Taustavärit */
-.misty-blue {
-    background-color: #b7cfdc; /* Misty Blue taustaväri etusivulle */
-}
-
+/* Taustaväri */
 .blue-gray {
-    background-color: #d9e4ec; /* Blue Gray taustaväri muille sivuille */
+    background-color: #d9e4ec;
+}
+
+/* Navigointipalkki */
+nav {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;               /* Väliä painikkeiden välillä */
+    justify-content: center;  /* Keskittää painikkeet vaakasuunnassa */
+    flex-wrap: wrap;          /* Rivittää painikkeet, jos tila loppuu */
 }
 
 /* Neliönmuotoiset painikkeet */
 .nav-button {
     display: inline-block;
-    padding: 20px;         /* Lisää tilaa, jotta painikkeet näyttävät suuremmilta */
-    width: 150px;          /* Kiinteä leveys, jotta painikkeet ovat neliömäisiä suuremmilla näytöillä */
-    text-align: center;    /* Tekstin keskitys */
+    padding: 20px;            /* Lisää tilaa, jotta painikkeet näyttävät suuremmilta */
+    width: 150px;             /* Kiinteä leveys, jotta painikkeet ovat neliömäisiä suuremmilla näytöillä */
+    text-align: center;       /* Tekstin keskitys */
     background-color: #b7cfdc; /* Misty Blue painikkeiden taustaväri */
-    color: white;          /* Tekstin väri */
-    text-decoration: none; /* Poistaa alleviivauksen */
-    font-weight: bold;     /* Tekstin lihavointi */
-    border-radius: 8px;    /* Pyöristää hieman kulmia */
+    color: white;             /* Tekstin väri */
+    text-decoration: none;    /* Poistaa alleviivauksen */
+    font-weight: bold;        /* Tekstin lihavointi */
+    border-radius: 8px;       /* Pyöristää hieman kulmia */
     transition: background-color 0.3s ease; /* Pehmeä hover-efekti */
-    font-size: 16px;       /* Tekstin koko */
+    font-size: 16px;          /* Tekstin koko */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Pieni varjo painikkeille */
 }
 
@@ -36,30 +42,33 @@ body {
     background-color: #98b6c8; /* Tummempi sininen hover-tilassa */
 }
 
-/* Responsiivisuus: pienemmät näytöt kuten tabletit ja puhelimet */
+/* Responsiivisuus: tabletti */
 @media (max-width: 1024px) {
     .nav-button {
         width: 45%;         /* Vie lähes puolet rivistä tableteilla (n. 2 painiketta rinnakkain) */
     }
 }
 
+/* Responsiivisuus: mobiililaitteet (pienet näytöt) */
 @media (max-width: 600px) {
+    /* Mobiililaitteilla poistetaan teksti ja näytetään vain symbolit */
     .nav-button {
-        width: 100%;        /* Vie koko tilan pienemmillä näytöillä, yksi painike per rivi */
-        padding: 15px;      /* Pienempi padding mobiilissa */
+        width: 50px;          /* Painikkeista tulee neliöitä */
+        height: 50px;         /* Asetetaan korkeus myös, jotta ne pysyvät neliönä */
+        padding: 10px;        /* Vähemmän paddingia */
+        font-size: 24px;      /* Suurempi fonttikoko symboleille */
+        display: flex;        /* Flex layout, jotta ikonit ovat keskellä */
+        align-items: center;  /* Pystysuuntainen keskitys */
+        justify-content: center; /* Vaakasuuntainen keskitys */
+    }
+
+    /* Piilotetaan teksti mobiililaitteilla */
+    .nav-button::after {
+        content: '';          /* Tyhjennetään tekstin jälkeinen sisältö */
     }
 
     nav {
-        flex-direction: column; /* Laittaa painikkeet päällekkäin mobiilissa */
-        gap: 15px;              /* Lisää hieman väliä painikkeiden väliin mobiilissa */
+        justify-content: space-around; /* Järjestää painikkeet tasaisesti vierekkäin */
+        gap: 20px;            /* Suurempi väli painikkeiden välille */
     }
-}
-
-/* Yleiset responsiiviset säädöt */
-h1 {
-    font-size: 2em;  /* Skaalautuva otsikkokoko */
-}
-
-p {
-    font-size: 1.1em;  /* Hieman isompi teksti, joka on helppo lukea */
 }
