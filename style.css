@@ -43,6 +43,10 @@ div {
     background-color: #d9e4ec;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 /*responsiivisuus */
 
 /* suuret näytöt */
