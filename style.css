@@ -37,7 +37,7 @@ nav {
     position: fixed;        /* Pysyvästi kiinnitetty paikka */
     bottom: 0;              /* Sijoittaa palkin sivun alareunaan */
     left: 0;
-    width: 100%;            /* Vie koko vaakasuoran tilan */
+    width: 90%;            /* Vie koko vaakasuoran tilan */
     display: flex;
     gap: 10px;              /* Väliä painikkeiden välillä */
     justify-content: center;/* Keskittää painikkeet vaakasuunnassa */
