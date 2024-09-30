@@ -1,15 +1,16 @@
 /* bodyn tyyli */
-body {
+/*body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     color: #333;
     box-sizing: border-box; /* Varmistaa, että marginaalit ja paddingit lasketaan oikein */
-}
+/* } */
+
 /* sisällön tyyli */
 div {
     border: 1px;
-    border-color: rgb(100, 199, 35);
+    border-color: rgb(7, 7, 7);
     border-style: solid;
     padding: 10px
 }
