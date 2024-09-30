@@ -16,7 +16,7 @@ div {
 }
 
 .header {
-    /*-- background-image: url("tausta1"); */
+    background-image: url("tausta1");
     background-position: center;
     background-size: cover;
 }
