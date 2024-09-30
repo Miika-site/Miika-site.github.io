@@ -10,14 +10,14 @@ body {
 div {
     border: 1px;
     border-color: rgb(100, 199, 35);
-    border-style: soldi;
-    padding: 
+    border-style: solid;
+    padding: 10px
 }
 
 .header {
-    /*-- backround-image: url(""); */
-    backround-position: center;
-    background: cover;
+    /*-- background-image: url(""); */
+    background-position: center;
+    background-size: cover;
 }
 
 .header h1 {
@@ -88,9 +88,9 @@ nav {
         justify-content: center; /* Vaakasuuntainen keskitys */
     }
 
-    /* Piilotetaan teksti mobiililaitteilla */
-    .nav-button::after {
-        content: '💡';          /* Tyhjennetään tekstin jälkeinen sisältö */
+    /* Piilotetaan teksti valikosta mobiililaitteilla */
+    .nav-button span {
+        display: none;         /* asdf */
     }
 
     nav {
