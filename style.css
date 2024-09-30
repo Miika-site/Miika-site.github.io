@@ -21,11 +21,12 @@ html,body {
 }
 
 /* otsikot */
-.header {
-    /* background-image: url("tausta1.jpg"); */
+/* .header {
+    background-image: url("tausta1.jpg"); 
     background-position: center;
     background-size: cover;
-}
+} */
+ 
 
 /* header 1 tyyli */
 .header h1 {
