@@ -24,7 +24,7 @@ html,body {
 .header {
     background-image: url("tausta1.jpg");
     background-position: center;
-    background-size: 40%;
+    background-size: cover;
 }
 
 /* header 1 tyyli */
