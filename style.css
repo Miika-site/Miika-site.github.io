@@ -79,17 +79,7 @@ body {
         justify-content: center; /* Vaakasuuntainen keskitys */
     }
 
-    /* Piilotetaan teksti valikosta mobiililaitteilla */
-    .nav-button span {
-        display: none;         /* asdf */
-    }
-
-    nav {
-        justify-content: space-around; /* Järjestää painikkeet tasaisesti vierekkäin */
-        gap: 20px;            /* Suurempi väli painikkeiden välille */
-    }
-    /* Hover-efekti: muuttaa taustavärin */
-
+/* Hover-efekti: muuttaa taustavärin */
 .nav-button:hover {
     background-color: #98b6c8; /* Tummempi sininen hover-tilassa */
 }
@@ -105,6 +95,8 @@ nav {
     background-color: #b7cfdc; /* Taustaväri naville */
     padding: 10px 0;        /* Lisää hieman tilaa palkille */
     z-index: 1000;          /* Varmistaa, että navigointipalkki on muiden elementtien päällä */
+    justify-content: space-around; /* Järjestää painikkeet tasaisesti vierekkäin */
+    gap: 20px;            /* Suurempi väli painikkeiden välille */
 }
 
 /* Neliönmuotoiset painikkeet */
