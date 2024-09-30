@@ -27,6 +27,12 @@ div {
     padding: 50px 10px 150px 10px;
 }
 
+.content {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+}
+
 /* Taustaväri */
 .blue-gray {
     background-color: #d9e4ec;
