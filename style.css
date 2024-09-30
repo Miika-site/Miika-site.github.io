@@ -6,10 +6,10 @@ body {
     color: #333;
     box-sizing: border-box; /* Varmistaa, että marginaalit ja paddingit lasketaan oikein */
 }
-
+/* sisällön tyyli */
 div {
     border: 1px;
-    border-color: black;
+    border-color: rgb(100, 199, 35);
     border-style: soldi;
     padding: 
 }
