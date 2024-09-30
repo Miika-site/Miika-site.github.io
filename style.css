@@ -7,6 +7,19 @@ body {
     box-sizing: border-box; /* Varmistaa, että marginaalit ja paddingit lasketaan oikein */
 }
 
+div {
+    border: 1px;
+    border-color: black;
+    border-style: soldi;
+    padding: 
+}
+
+.header {
+    backround-image: url("");
+    backround-position: center;
+    background: cover;
+    
+}
 /* Taustaväri */
 .blue-gray {
     background-color: #d9e4ec;
