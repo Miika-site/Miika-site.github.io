@@ -16,8 +16,11 @@ div {
 }
 
 html,body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    color: #333;
+    box-sizing: border-box;
 }
 
 /* otsikot */
@@ -59,7 +62,7 @@ html,body {
 /* Responsiivisuus: tabletti */
 @media (max-width: 1024px) {
     .nav-button {
-        width: 45%;         /* Vie lähes puolet rivistä tableteilla (n. 2 painiketta rinnakkain) */
+        width: 45%;         /*  */
     }
 }
 
