@@ -47,6 +47,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 /*responsiivisuus */
 
 /* suuret näytöt */
@@ -66,21 +67,19 @@ img {
 
 /* Responsiivisuus: mobiililaitteet */
 @media (max-width: 600px) {
-    /* Mobiililaitteilla poistetaan teksti ja näytetään vain symbolit */
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
     .nav-button {
-        width: 50px;          /* Painikkeista tulee neliöitä */
-        height: 50px;         /* Asetetaan korkeus myös, jotta ne pysyvät neliönä */
-        padding: 10px;        /* Vähemmän paddingia */
-        font-size: 24px;      /* Suurempi fonttikoko symboleille */
-        display: flex;        /* Flex layout, jotta ikonit ovat keskellä */
-        align-items: center;  /* Pystysuuntainen keskitys */
-        justify-content: center; /* Vaakasuuntainen keskitys */
+        width: 100%; /* Painikkeet vievät koko vaakasuoran tilan mobiilissa */
     }
 
 /* Hover-efekti: muuttaa taustavärin */
 .nav-button:hover {
     background-color: #98b6c8; /* Tummempi sininen hover-tilassa */
-}
+    }
 /* Navigointipalkki */
 nav {
     position: fixed;        /* Pysyvästi kiinnitetty paikka */
