@@ -8,7 +8,7 @@ body {
 }
 
 div {
-    border: 1px;
+    border: 5px;
     border-color: black;
     border-style: soldi;
     padding: 
@@ -18,7 +18,7 @@ div {
     backround-image: url("");
     backround-position: center;
     background: cover;
-    
+
 }
 /* Taustaväri */
 .blue-gray {
