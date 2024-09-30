@@ -15,11 +15,18 @@ div {
 }
 
 .header {
-    backround-image: url("");
+    /*-- backround-image: url(""); */
     backround-position: center;
     background: cover;
-
 }
+
+.header h1 {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    padding: 50px 10px 150px 10px;
+}
+
 /* Taustaväri */
 .blue-gray {
     background-color: #d9e4ec;
