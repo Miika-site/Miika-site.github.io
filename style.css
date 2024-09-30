@@ -1,6 +1,6 @@
 /* bodyn tyyli */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Raleway, open sans;
     margin: 0;
     padding: 20px;
     color: #333;
@@ -82,7 +82,7 @@ img {
 
 /* Hover-efekti: muuttaa taustavärin */
 .nav-button:hover {
-    background-color: #98b6c8; /* Tummempi sininen hover-tilassa */
+    background-color: #98b6c8; /* Tummempi hover-tilassa */
     }
 /* Navigointipalkki */
 nav {
