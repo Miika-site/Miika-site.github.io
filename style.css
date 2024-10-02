@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 20px;
     color: #000000;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Varmistaa, että padding ja border lasketaan elementin leveyteen 
+    eikä niiden päälle, mikä tekee leveyksien hallinnasta helpompaa.*/
 }
 
 div {
@@ -44,8 +45,8 @@ div {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Varmistaa, että kuvat eivät ylitä niitä sisältävän elementin leveyttä */
+    height: auto; /*mittasuhteet */
 }
 
 /*responsiivisuus */
@@ -78,8 +79,8 @@ img {
     }
 
     .nav-button {
-        width: 50px; /* pienempi leveys mobiilissa */
-        height: 50px;
+        width: 25px; /* pienempi leveys mobiilissa */
+        height: 25px;
         padding: 10px;
 
     }
