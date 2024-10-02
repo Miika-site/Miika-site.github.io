@@ -95,7 +95,7 @@ nav {
     justify-content: center;/* Keskittää painikkeet vaakasuunnassa */
     background-color: #b7cfdc; /* Taustaväri naville */
     padding: 10px 0;        /* Lisää tilaa palkille */
-    z-index: 1000;          /* Varmistaa, että navigointipalkki on muiden elementtien päällä */
+    /* z-index: 1000;          /* Varmistaa, että navigointipalkki on muiden elementtien päällä */ */
     justify-content: space-around; /* Järjestää painikkeet tasaisesti vierekkäin */
     gap: 20px;            /* Suurempi väli painikkeiden välille */
 }
@@ -113,6 +113,6 @@ nav {
     border-radius: 8px;       /* Pyöristää hieman kulmia */
     transition: background-color 0.3s ease; /* Pehmeä hover-efekti */
     font-size: 16px;          /* Tekstin koko */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Pieni varjo painikkeille */
+    
 }
 }
