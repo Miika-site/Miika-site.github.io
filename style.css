@@ -77,10 +77,10 @@ img {
     }
 
     .nav-button {
-        width: 100%; /* Painikkeet vievät koko vaakasuoran tilan mobiilissa */
+        width: 100%; /* Painikkeet koko vaakasuora tila mobiilissa */
     }
 
-/* Hover-efekti: muuttaa taustavärin */
+/* Hover-efekti: taustaväri vaihtuu */
 .nav-button:hover {
     background-color: #98b6c8; /* Tummempi hover-tilassa */
     }
@@ -94,7 +94,7 @@ nav {
     gap: 10px;              /* Väliä painikkeiden välillä */
     justify-content: center;/* Keskittää painikkeet vaakasuunnassa */
     background-color: #b7cfdc; /* Taustaväri naville */
-    padding: 10px 0;        /* Lisää hieman tilaa palkille */
+    padding: 10px 0;        /* Lisää tilaa palkille */
     z-index: 1000;          /* Varmistaa, että navigointipalkki on muiden elementtien päällä */
     justify-content: space-around; /* Järjestää painikkeet tasaisesti vierekkäin */
     gap: 20px;            /* Suurempi väli painikkeiden välille */
@@ -103,8 +103,8 @@ nav {
 /* Neliönmuotoiset painikkeet */
 .nav-button {
     display: inline-block;
-    padding: 20px;            /* Lisää tilaa, jotta painikkeet näyttävät suuremmilta */
-    width: 150px;             /* Kiinteä leveys, jotta painikkeet ovat neliömäisiä suuremmilla näytöillä */
+    padding: 20px;            /* Lisää tilaa, suuremmmat painikkeet */
+    width: 150px;             /* Kiinteä leveys, painikkeet ovat neliömäisiä suuremmilla näytöillä */
     text-align: center;       /* Tekstin keskitys */
     background-color: #b7cfdc; /* Misty Blue painikkeiden taustaväri */
     color: white;             /* Tekstin väri */
