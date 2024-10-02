@@ -74,10 +74,14 @@ img {
     body {
         font-size: 14px;
         padding: 10px;
+
     }
 
     .nav-button {
-        width: 100%; /* Painikkeet koko vaakasuora tila mobiilissa */
+        width: 50px; /* pienempi leveys mobiilissa */
+        height: 50px;
+        padding: 10px;
+
     }
 
 /* Hover-efekti: taustaväri vaihtuu */
@@ -86,7 +90,6 @@ img {
     }
 /* Navigointipalkki */
 nav {
-    size: 10px;
     position: fixed;        /* Pysyvästi kiinnitetty paikka */
     bottom: 0;              /* Sijoittaa palkin sivun alareunaan */
     left: 0;
@@ -105,7 +108,7 @@ nav {
 .nav-button {
     display: inline-block;
     padding: 20px;            /* Lisää tilaa, suuremmmat painikkeet */
-    width: 150px;             /* Kiinteä leveys, painikkeet ovat neliömäisiä suuremmilla näytöillä */
+    width: 100px;             /* Kiinteä leveys, painikkeet ovat neliömäisiä suuremmilla näytöillä */
     text-align: center;       /* Tekstin keskitys */
     background-color: #b7cfdc; /* Misty Blue painikkeiden taustaväri */
     color: white;             /* Tekstin väri */
