@@ -77,6 +77,11 @@ img {
         padding: 10px;
 
     }
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
 
     .nav-button {
         width: 25px; /* pienempi leveys mobiilissa */
@@ -114,7 +119,7 @@ nav {
     text-decoration: none;    /* Poistaa alleviivauksen */
     font-weight: bold;        /* Tekstin lihavointi */
     border-radius: 8px;       /* Pyöristää hieman kulmia */
-    transition: background-color 0.3s ease; /* Pehmeä hover-efekti */
+    transition: background-color 0.3s ease; /* efekti */
     font-size: 16px;          /* Tekstin koko */
     
 }
