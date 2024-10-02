@@ -1,9 +1,9 @@
 /* bodyn tyyli */
 body {
-    font-family: Raleway, open sans;
+    font-family: Raleway, open sans; /*yhdistelmäfontti */
     margin: 0;
     padding: 20px;
-    color: #333;
+    color: #000000;
     box-sizing: border-box;
 }
 
