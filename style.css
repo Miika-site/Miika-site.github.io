@@ -39,12 +39,6 @@ div {
     font-size: 18px;
 }
 
-.background-page {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('whatnow.jpg') no-repeat center center fixed;
-    background-size: cover;
-    min-height: 100vh; /* Varmistaa, että taustakuva kattaa koko näkymän */
-
-}
 /* Taustaväri */
 .blue-gray {
     background-color: #d9e4ec;
