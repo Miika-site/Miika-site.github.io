@@ -99,7 +99,6 @@ nav {
     justify-content: center;/* Keskittää painikkeet vaakasuunnassa */
     background-color: #b7cfdc; /* Taustaväri naville */
     padding: 10px 0;        /* Lisää tilaa palkille */
-    /* z-index: 1000;          /* Varmistaa, että navigointipalkki on muiden elementtien päällä */ */
     justify-content: space-around; /* Järjestää painikkeet tasaisesti vierekkäin */
     gap: 20px;            /* Suurempi väli painikkeiden välille */
 }
