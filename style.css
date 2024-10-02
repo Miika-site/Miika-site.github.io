@@ -86,6 +86,7 @@ img {
     }
 /* Navigointipalkki */
 nav {
+    size: 10px;
     position: fixed;        /* Pysyvästi kiinnitetty paikka */
     bottom: 0;              /* Sijoittaa palkin sivun alareunaan */
     left: 0;
