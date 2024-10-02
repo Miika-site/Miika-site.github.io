@@ -98,7 +98,7 @@ nav {
     gap: 10px;              /* Väliä painikkeiden välillä */
     justify-content: center;/* Keskittää painikkeet vaakasuunnassa */
     background-color: #b7cfdc; /* Taustaväri naville */
-    padding: 10px 0;        /* Lisää tilaa palkille */
+    padding: 10px;        
     justify-content: space-around; /* Järjestää painikkeet tasaisesti vierekkäin */
     gap: 20px;            /* Suurempi väli painikkeiden välille */
 }
