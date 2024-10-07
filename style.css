@@ -40,6 +40,7 @@ ul.navigation {
     align-items: center;
     padding: 0;
     margin: 0;
+    flex-direction: row; /* Aina vaakasuuntainen */
 }
 
 ul.navigation li {
