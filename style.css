@@ -5,6 +5,10 @@ body {
     box-sizing: border-box;
 }
 
+p {
+  background-image: url('index.jpg');
+}
+
 header {
     text-align: center;
     background-color: #b7cfdc; /* Misty Blue */
