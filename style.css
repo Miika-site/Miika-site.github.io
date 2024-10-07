@@ -29,6 +29,7 @@ footer {
     background-color: #385e72; /* Dark Misty Blue */
     padding: 10px 0;
     position: fixed;
+    flex-direction: row; /* Aina vaakasuuntainen */
     bottom: 0;
     width: 100%;
 }
