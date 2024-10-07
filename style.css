@@ -102,6 +102,19 @@ footer {
     ul.navigation a {
         font-size: 28px;
     }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #385e72;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    footer {
+        position: relative; /* Navigointivalikko ei näy footerissa tietokoneella */
+    }
 }
 
 /* Responsiivisuus: tabletti */
@@ -125,6 +138,14 @@ footer {
     main img {
         width: 90%;
     }
+
+    nav {
+        display: none; /* Piilotetaan navigointi yläreunasta */
+    }
+
+    footer {
+        display: block; /* Näytetään navigointi alareunassa footerin sisällä */
+    }
 }
 
 /* Responsiivisuus: mobiililaitteet */
@@ -145,15 +166,24 @@ footer {
         font-size: 16px;
     }
 
-    ul.navigation a {
-        font-size: 22px;
-    }
-
     main img {
         width: 100%;
     }
 
+    nav {
+        display: none; /* Piilotetaan navigointi yläreunasta */
+    }
+
     footer {
-        padding: 5px 0;
+        display: block; /* Näytetään navigointi alareunassa footerin sisällä */
+    }
+
+    footer ul.navigation {
+        flex-direction: column; /* Mobiilissa navigointipainikkeet pinottu päällekkäin */
+        text-align: center;
+    }
+
+    ul.navigation a {
+        font-size: 20px; /* Pienennetään painikkeita hieman mobiilissa */
     }
 }
