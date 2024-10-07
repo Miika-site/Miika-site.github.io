@@ -70,3 +70,44 @@ p, ul {
     font-size: 16px;
     color: #000;
 }
+
+/*responsiivisuus */
+
+/* suuret näytöt */
+@media (min-width: 1025px) {
+    .content {
+        width: 55%; 
+    }
+}
+
+/* Responsiivisuus: tabletti */
+@media (max-width: 1024px) {
+    .nav-button {
+        body {
+            font-size: 16px;
+            padding: 15px;
+        }
+        width: 45%;         /* suuremmat painikkeet */
+    }
+}
+
+/* Responsiivisuus: mobiililaitteet */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .nav-button {
+        width: 70px; /* pienempi leveys mobiilissa */
+        height: 70px;
+        padding: 5px;
+
+    }
+}
