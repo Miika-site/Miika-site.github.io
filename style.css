@@ -1,126 +1,68 @@
-/* bodyn tyyli */
 body {
-    font-family: 'Raleway', sans-serif; /*yhdistelmäfontti */
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 20px;
-    color: #000000;
-    box-sizing: border-box; /* Varmistaa, että padding ja border lasketaan elementin leveyteen 
-    eikä niiden päälle, mikä tekee leveyksien hallinnasta helpompaa.*/
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div {
-    border: 1px;
-    border-color: rgb(7, 7, 7);
-    border-style: solid;
-    padding: 10px
-}
-
-/* otsikot */
-/* .header {
-    background-image: url("tausta1.jpg"); 
-    background-position: center;
-    background-size: cover;
-} */
- 
-
-/* header 1 tyyli */
-.header h1 {
-    font-size: 60px;
+header {
     text-align: center;
-    color: white;
-    padding: 50px 10px 150px 10px;
-    margin: 0px;
+    background-color: #b7cfdc; /* Misty Blue */
+    padding: 20px 0;
 }
 
-/* sisällön tyyli */
-.content {
-    width: 90%;
-    margin: auto;
-    font-size: 18px;
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #000;
 }
 
-/* Taustaväri */
-.blue-gray {
-    background-color: #d9e4ec;
+main {
+    padding: 20px;
+    text-align: center;
 }
 
-img {
-    max-width: 100%; /* Varmistaa, että kuvat eivät ylitä niitä sisältävän elementin leveyttä */
-    height: auto; /*mittasuhteet */
+main img {
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
 }
 
-/*responsiivisuus */
-
-/* suuret näytöt */
-@media (min-width: 1025px) {
-    .content {
-        width: 55%; 
-    }
-    
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #385e72; /* Dark Misty Blue */
+    padding: 10px 0;
 }
 
-/* Responsiivisuus: tabletti */
-@media (max-width: 1024px) {
-    .nav-button {
-        body {
-            font-size: 16px;
-            padding: 15px;
-        }
-        width: 45%;         /* suuremmat painikkeet */
-    }
-}
-
-/* Responsiivisuus: mobiililaitteet */
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-        padding: 10px;
-
-    }
-    nav {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .nav-button {
-        width: 70px; /* pienempi leveys mobiilissa */
-        height: 70px;
-        padding: 5px;
-
-    }
-
-/* Hover-efekti: taustaväri vaihtuu */
-.nav-button:hover {
-    background-color: #98b6c8; /* Tummempi hover-tilassa */
-    }
-/* Navigointipalkki */
-nav {
-    bottom: 0;              /* Sijoittaa palkin sivun alareunaan */
-    left: 0;
-    width: 100%;            /* palkin leveys */
+ul.navigation {
+    list-style: none;
     display: flex;
-    gap: 10px;              /* Väliä painikkeiden välillä */
-    justify-content: center;/* Keskittää painikkeet vaakasuunnassa */
-    background-color: #b7cfdc; /* Taustaväri naville */
-    padding: 10px;        
-    justify-content: space-around; /* Järjestää painikkeet tasaisesti vierekkäin */
-    gap: 20px;            /* Suurempi väli painikkeiden välille */
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
-/* Neliönmuotoiset painikkeet */
-.nav-button {
-    display: inline-block;
-    padding: 20px;            /* Lisää tilaa, suuremmmat painikkeet */
-    width: 100px;             /* Kiinteä leveys, painikkeet ovat neliömäisiä suuremmilla näytöillä */
-    text-align: center;       /* Tekstin keskitys */
-    background-color: #b7cfdc; /* Misty Blue painikkeiden taustaväri */
-    color: white;             /* Tekstin väri */
-    text-decoration: none;    /* Poistaa alleviivauksen */
-    font-weight: bold;        /* Tekstin lihavointi */
-    border-radius: 8px;       /* Pyöristää hieman kulmia */
-    transition: background-color 0.3s ease; /* efekti */
-    font-size: 16px;          /* Tekstin koko */
-    
+ul.navigation li {
+    display: inline;
 }
+
+ul.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+body.home {
+    background-color: #b7cfdc; /* Misty Blue */
+}
+
+body.subpage {
+    background-color: #d9e4ec; /* Blue Gray */
+}
+
+p, ul {
+    font-size: 16px;
+    color: #000;
 }
