@@ -25,12 +25,11 @@ main {
     font-size: 18px;
 }
 
-main img {
-    width: 80%;
+/* main img {
     max-width: 100%;
     margin-top: 20px;
     height: auto; /*mittasuhteet */
-}
+/*} */
 
 footer {
     background-color: #385e72; /* Dark Misty Blue */
@@ -143,10 +142,6 @@ footer {
         font-size: 26px;
     }
 
-    main img {
-        width: 90%;
-    }
-
     nav {
         display: none; /* Piilotetaan navigointi yläreunasta */
     }
@@ -174,11 +169,7 @@ footer {
         font-size: 16px;
     }
 
-    main img {
-        width: 100%;
-    }
-
-    nav {
+   nav {
         display: none; /* Piilotetaan navigointi yläreunasta */
     }
 
@@ -189,7 +180,7 @@ footer {
     ul.navigation {
         justify-content: space-around; /* Vaakasuuntainen asettelu */
     }
-    
+
     footer ul.navigation {
         flex-direction: column; /* Mobiilissa navigointipainikkeet pinottu päällekkäin */
         text-align: center;
