@@ -75,27 +75,73 @@ p, ul {
 
 /* suuret näytöt */
 @media (min-width: 1025px) {
-    .content {
-        width: 55%; 
+    main {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p, ul {
+        font-size: 20px;
+    }
+
+    ul.navigation a {
+        font-size: 28px;
     }
 }
 
 /* Responsiivisuus: tabletti */
 @media (max-width: 1024px) {
-    .nav-button {
-        body {
-            font-size: 16px;
-            padding: 15px;
-        }
-        width: 45%;         /* suuremmat painikkeet */
+    main {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p, ul {
+        font-size: 18px;
+    }
+
+    ul.navigation a {
+        font-size: 26px;
+    }
+
+    main img {
+        width: 90%;
     }
 }
 
 /* Responsiivisuus: mobiililaitteet */
 @media (max-width: 600px) {
-    body {
-        font-size: 14px;
-        padding: 10px;
+    header {
+        padding: 15px 0;
+    }
 
+    main {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p, ul {
+        font-size: 16px;
+    }
+
+    ul.navigation a {
+        font-size: 22px;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    footer {
+        padding: 5px 0;
     }
 }
