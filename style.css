@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #b7cfdc;
 }
 
 header {
@@ -74,7 +75,7 @@ nav {
 ul.navigation {
     list-style: none;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -128,7 +129,7 @@ p, ul {
     p, ul {
         font-size: 25px;
     }
-    
+
     nav {
         z-index: 1000;
     }
