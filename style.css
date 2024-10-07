@@ -102,6 +102,11 @@ footer {
         font-size: 28px;
     }
 
+    ul.navigation a span {
+        display: inline; /* Näytetään teksti suurilla näytöillä */
+        margin-left: 5px;
+    }
+
     nav {
         position: fixed;
         top: 0;
@@ -142,6 +147,10 @@ footer {
         font-size: 26px;
     }
 
+    ul.navigation a span {
+        display: none; /* Teksti piilotettuna tableteilla */
+    }
+
     nav {
         display: none; /* Piilotetaan navigointi yläreunasta */
     }
@@ -179,6 +188,10 @@ footer {
 
     ul.navigation {
         justify-content: space-around; /* Vaakasuuntainen asettelu */
+    }
+
+    ul.navigation a span {
+        display: none; /* Teksti piilotettuna tableteilla */
     }
 
     footer ul.navigation {
