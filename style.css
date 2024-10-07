@@ -128,7 +128,10 @@ p, ul {
     p, ul {
         font-size: 25px;
     }
-
+    
+    nav {
+        z-index: 1000;
+    }
     ul.navigation a {
         font-size: 28px;
     }
@@ -136,10 +139,6 @@ p, ul {
     ul.navigation a span {
         display: inline; /* Näytetään teksti suurilla näytöillä */
         margin-left: 5px;
-    }
-
-    nav {
-        z-index: 1000;
     }
 
     footer {
