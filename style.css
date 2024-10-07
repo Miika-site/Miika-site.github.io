@@ -112,6 +112,10 @@ footer {
         z-index: 1000;
     }
 
+    ul.navigation {
+        justify-content: space-around;
+    }
+
     footer {
         position: relative; /* Navigointivalikko ei näy footerissa tietokoneella */
     }
@@ -129,6 +133,10 @@ footer {
 
     p, ul {
         font-size: 18px;
+    }
+
+    ul.navigation {
+        justify-content: space-around; /* Vaakasuuntainen asettelu */
     }
 
     ul.navigation a {
@@ -178,6 +186,10 @@ footer {
         display: block; /* Näytetään navigointi alareunassa footerin sisällä */
     }
 
+    ul.navigation {
+        justify-content: space-around; /* Vaakasuuntainen asettelu */
+    }
+    
     footer ul.navigation {
         flex-direction: column; /* Mobiilissa navigointipainikkeet pinottu päällekkäin */
         text-align: center;
