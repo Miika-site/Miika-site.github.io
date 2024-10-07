@@ -11,35 +11,31 @@ header {
     padding: 20px 0;
 }
 
-body.home header {
+/* body.home header {
     background-image: url('index.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Pikavinkit-sivu - pikavinkit */
 body.pikavinkit header {
     background-image: url('');
 }
 
-/* Tilin suojaus - tilin suojaus */
 body.tilin header {
     background-image: url('');
 }
 
-/* Laitteet ja netti - laitteet ja netti*/
 body.netti header {
     background-image: url('');
 }
 
-/* Mistä apua? - yhteystietoja */
 body.apua header {
     background-image: url('kysymys.JPG');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
+    background-repeat: no-repeat; */
+/* } */
 
 h1 {
     font-family: 'Raleway', sans-serif;
