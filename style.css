@@ -25,12 +25,6 @@ main {
     font-size: 18px;
 }
 
-/* main img {
-    max-width: 100%;
-    margin-top: 20px;
-    height: auto; /*mittasuhteet */
-/*} */
-
 footer {
     background-color: #385e72; /* Dark Misty Blue */
     padding: 10px 0;
@@ -64,11 +58,7 @@ ul.navigation a span {
     display: none; /* Teksti piilotetaan oletuksena */
 }
 
-body.home {
-    background-color: #d9e4ec; /* Blue Gray */
-}
-
-body.subpage {
+body.home, body.subpage {
     background-color: #d9e4ec; /* Blue Gray */
 }
 
@@ -81,16 +71,16 @@ p, ul {
 nav {
     background-color: #385e72; /* Dark Misty Blue */
     padding: 10px 0;
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
 }
 
-footer {
+/* footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+*/ /*} */
 
 /*responsiivisuus */
 
@@ -118,20 +108,11 @@ footer {
     }
 
     nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #385e72;
-        padding: 10px 0;
         z-index: 1000;
     }
 
-    ul.navigation {
-        justify-content: space-around;
-    }
-
     footer {
-        position: relative; /* Navigointivalikko ei näy footerissa tietokoneella */
+        display: none; /* Piilotetaan footerin navigointi tietokoneella */
     }
 }
 
@@ -147,10 +128,6 @@ footer {
 
     p, ul {
         font-size: 18px;
-    }
-
-    ul.navigation {
-        justify-content: space-around; /* Vaakasuuntainen asettelu */
     }
 
     ul.navigation a {
@@ -202,11 +179,6 @@ footer {
 
     ul.navigation a span {
         display: none; /* Teksti piilotettuna tableteilla */
-    }
-
-    footer ul.navigation {
-        flex-direction: column; /* Mobiilissa navigointipainikkeet pinottu päällekkäin */
-        text-align: center;
     }
 
     ul.navigation a {
