@@ -5,16 +5,37 @@ body {
     box-sizing: border-box;
 }
 
-.p {
-  background-image: url('index.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
 header {
     text-align: center;
     background-color: #b7cfdc; /* Misty Blue */
     padding: 20px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.home header {
+    background-image: url('index.jpg');
+}
+
+/* Pikavinkit-sivu - pikavinkit */
+body.pikavinkit header {
+    background-image: url('kuvat/pikavinkit-header.jpg');
+}
+
+/* Tilin suojaus - tilin suojaus */
+body.tilin header {
+    background-image: url('kuvat/tilinsuojaus-header.jpg');
+}
+
+/* Laitteet ja netti - laitteet ja netti*/
+body.netti header {
+    background-image: url('kuvat/laitteet-header.jpg');
+}
+
+/* Mistä apua? - yhteystietoja */
+body.apua header {
+    background-image: url('kysymys.JPG');
 }
 
 h1 {
