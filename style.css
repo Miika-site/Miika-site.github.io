@@ -121,6 +121,14 @@ p, ul {
         margin-top: 80px;
         width: 70%;
     }
+    
+    .desktop {
+        display: block;
+    }
+
+    .mob {
+        display: none;
+    }
 
     h1 {
         font-size: 50px;
@@ -142,9 +150,10 @@ p, ul {
         margin-left: 5px;
     }
 
-    footer {
+    /*
+     footer {
         display: none; /* Piilotetaan footerin navigointi tietokoneella */
-    }
+    /* } */
 }
 
 /* Responsiivisuus: tabletti */
