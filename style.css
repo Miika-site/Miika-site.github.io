@@ -12,17 +12,24 @@ header {
     padding: 20px 0;
 }
 
+.header-image {
+    width: 100%;
+    max-width: 600px; /* Suurempi kuva index-sivun otsikossa */
+    height: auto;
+    margin: 20px auto;
+    display: block;
+/*
 body.home header {
     background-image: url('index.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 600px; /* Suurempi kuva index-sivun otsikossa */
+    max-width: 600px; /* Suurempi kuva index-sivun otsikossa 
     height: auto;
     margin: 20px auto;
     display: block;
-}
+} */
 
 /* body.pikavinkit header {
     background-image: url('');
