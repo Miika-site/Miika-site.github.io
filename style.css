@@ -73,17 +73,18 @@ nav.desktop {
     padding: 10px 0;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     display: none; /* Piilotetaan oletuksena */
-    z-index: 1000;
+    z-index: 1000; /* Asetetaan korkealle kerrostasolle, jotta se pysyy muiden elementtien yläpuolella */
 }
 
 /*responsiivisuus */
 
 /* suuret näytöt */
 @media only screen and (min-width: 992px) {
-    main {
-        margin-top: 80px;       
+    header {
+        margin-top: 60px; /* Lisätään marginaali headerin yläpuolelle, jotta navigointi ei peitä sitä */
     }
     
     nav.desktop {
