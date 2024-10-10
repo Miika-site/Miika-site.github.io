@@ -17,6 +17,11 @@ body.home header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    max-width: 600px; /* Suurempi kuva index-sivun otsikossa */
+    height: auto;
+    margin: 20px auto;
+    display: block;
 }
 
 /* body.pikavinkit header {
@@ -61,17 +66,6 @@ footer {
     width: 100%;
 }
 
-/* Navigointivalikko yläreunaan isommilla näytöillä */
-nav {
-    background-color: #385e72; /* Dark Misty Blue */
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: none; /* Piilotetaan oletuksena */
-    z-index: 1000;
-}
-
 ul.navigation {
     list-style: none;
     display: flex;
@@ -94,19 +88,30 @@ ul.navigation a {
     align-items: center;
 }
 
-ul.navigation a span {
+/* Navigointivalikko yläreunaan isommilla näytöillä */
+nav {
+    background-color: #385e72; /* Dark Misty Blue */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none; /* Piilotetaan oletuksena */
+    z-index: 1000;
+}
+
+/* ul.navigation a span {
     display: inline;
     margin-left: 5px;
 }
-
-body.home, body.subpage {
+*/
+/*body.home, body.subpage {
     background-color: #d9e4ec; /* Blue Gray */
-}
+/*}*/
 
-p, ul {
+/*p, ul {
     font-size: 16px;
     color: #000;
-}
+}*/
 
 /* footer {
     position: fixed;
@@ -123,9 +128,13 @@ p, ul {
         width: 70%;
     }
     
-    .desktop {
+    nav.desktop {
         display: block;
     }
+
+    footer {
+        display: none; /* Piilotetaan footerin navigointi tietokoneella */
+    } 
 
     /*.mob {
         display: none;
@@ -139,23 +148,21 @@ p, ul {
         font-size: 25px;
     }
 
-    nav {
-        display: block; /* Näytetään navigointipalkki */
+    /*nav {
+        display: block; 
         
     }
     ul.navigation a {
         font-size: 28px;
     }
-
-    ul.navigation a span {
-        display: inline; /* Näytetään teksti suurilla näytöillä */
+    */
+/*  ul.navigation a span {
+        display: inline; /* Näytetään teksti suurilla näytöillä 
         margin-left: 5px;
-    }
-
-    footer {
-        display: none; /* Piilotetaan footerin navigointi tietokoneella */
     } 
-}
+
+    
+} */
 
 /* Responsiivisuus: tabletti */
 @media only screen and (min-width: 600px) {
