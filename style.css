@@ -95,7 +95,8 @@ ul.navigation a {
 }
 
 ul.navigation a span {
-    display: none; /* Teksti piilotetaan oletuksena */
+    display: inline;
+    margin-left: 5px;
 }
 
 body.home, body.subpage {
@@ -139,6 +140,7 @@ p, ul {
     }
 
     nav {
+        display: block; /* Näytetään navigointipalkki */
         z-index: 1000;
     }
     ul.navigation a {
@@ -150,10 +152,9 @@ p, ul {
         margin-left: 5px;
     }
 
-    /*
-     footer {
+    footer {
         display: none; /* Piilotetaan footerin navigointi tietokoneella */
-    /* } */
+    } 
 }
 
 /* Responsiivisuus: tabletti */
