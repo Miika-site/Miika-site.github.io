@@ -123,13 +123,13 @@ p, ul {
         width: 70%;
     }
     
-    .desktop {
+    /*.desktop {
         display: block;
     }
 
     .mob {
         display: none;
-    }
+    } */
 
     h1 {
         font-size: 50px;
@@ -141,7 +141,7 @@ p, ul {
 
     nav {
         display: block; /* Näytetään navigointipalkki */
-        z-index: 1000;
+        
     }
     ul.navigation a {
         font-size: 28px;
