@@ -234,3 +234,13 @@ nav {
         font-size: 20px; /* Pienennetään painikkeita hieman mobiilissa */
     }
 }
+/* Yhteystietoja-sivu taustakuvalla */
+body.apua {
+    background-image: url('kysymys.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.apua main, body.apua header, body.apua footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Läpinäkyvä valkoinen kerros, jotta teksti erottuu */
+}
