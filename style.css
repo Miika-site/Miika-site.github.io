@@ -132,7 +132,7 @@ nav {
 @media only screen and (min-width: 992px) {
     main {
         margin-top: 80px;
-        width: 70%;
+        
     }
     
     nav.desktop {
@@ -177,6 +177,10 @@ nav {
         width: 85%;
     }
 
+    nav.desktop {
+        display: none; /* Piilotetaan navigointi pienillä näytöillä */
+    }
+
     h1 {
         font-size: 28px;
     }
@@ -191,10 +195,6 @@ nav {
 
     ul.navigation a span {
         display: none; /* Teksti piilotettuna tableteilla */
-    }
-
-    nav {
-        display: none; /* Piilotetaan navigointi yläreunasta */
     }
 
     footer {
@@ -220,8 +220,8 @@ nav {
         font-size: 16px;
     }
 
-   nav {
-        display: none; /* Piilotetaan navigointi yläreunasta */
+    nav.desktop {
+        display: none; /* Piilotetaan navigointi pienillä näytöillä */
     }
 
     footer {
