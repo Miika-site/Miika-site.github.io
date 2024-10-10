@@ -10,6 +10,7 @@ header {
     text-align: center;
     background-color: #b7cfdc; /* Misty Blue */
     padding: 20px 0;
+    position: relative;
 }
 
 .header-image {
@@ -18,37 +19,8 @@ header {
     height: auto;
     margin: 20px auto;
     display: block;
-/*
-body.home header {
-    background-image: url('index.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    max-width: 600px; /* Suurempi kuva index-sivun otsikossa 
-    height: auto;
-    margin: 20px auto;
-    display: block;
-} */
 
-/* body.pikavinkit header {
-    background-image: url('');
-}
-
-body.tilin header {
-    background-image: url('');
-}
-
-body.netti header {
-    background-image: url('');
-}
-
-body.apua header {
-    background-image: url('kysymys.JPG');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-/* } */
+    
 
 h1 {
     font-family: 'Raleway', sans-serif;
@@ -96,7 +68,7 @@ ul.navigation a {
 }
 
 /* Navigointivalikko yläreunaan isommilla näytöillä */
-nav {
+nav.desktop {
     background-color: #385e72; /* Dark Misty Blue */
     padding: 10px 0;
     position: fixed;
@@ -106,33 +78,12 @@ nav {
     z-index: 1000;
 }
 
-/* ul.navigation a span {
-    display: inline;
-    margin-left: 5px;
-}
-*/
-/*body.home, body.subpage {
-    background-color: #d9e4ec; /* Blue Gray */
-/*}*/
-
-/*p, ul {
-    font-size: 16px;
-    color: #000;
-}*/
-
-/* footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-*/ /*} */
-
 /*responsiivisuus */
 
 /* suuret näytöt */
 @media only screen and (min-width: 992px) {
     main {
-        margin-top: 80px;
-        
+        margin-top: 80px;       
     }
     
     nav.desktop {
@@ -143,11 +94,7 @@ nav {
         display: none; /* Piilotetaan footerin navigointi tietokoneella */
     } 
 
-    /*.mob {
-        display: none;
-    } */
-
-    h1 {
+   h1 {
         font-size: 50px;
     }
 
@@ -155,27 +102,8 @@ nav {
         font-size: 25px;
     }
 
-    /*nav {
-        display: block; 
-        
-    }
-    ul.navigation a {
-        font-size: 28px;
-    }
-    */
-/*  ul.navigation a span {
-        display: inline; /* Näytetään teksti suurilla näytöillä 
-        margin-left: 5px;
-    } 
-
-    
-} */
-
 /* Responsiivisuus: tabletti */
 @media only screen and (min-width: 600px) {
-    main {
-        width: 85%;
-    }
 
     nav.desktop {
         display: none; /* Piilotetaan navigointi pienillä näytöillä */
@@ -189,17 +117,14 @@ nav {
         font-size: 18px;
     }
 
-    ul.navigation a {
-        font-size: 26px;
-    }
-
-    ul.navigation a span {
-        display: none; /* Teksti piilotettuna tableteilla */
-    }
-
-    footer {
+   footer {
         display: block; /* Näytetään navigointi alareunassa footerin sisällä */
     }
+
+    main {
+        width: 85%;
+    }
+
 }
 
 /* Responsiivisuus: mobiililaitteet */
@@ -233,13 +158,6 @@ nav {
         
     }
 
-    ul.navigation a span {
-        display: none; /* Teksti piilotettuna tableteilla */
-    }
-
-    ul.navigation a {
-        font-size: 20px; /* Pienennetään painikkeita hieman mobiilissa */
-    }
 }
 /* Yhteystietoja-sivu taustakuvalla */
 body.apua {
