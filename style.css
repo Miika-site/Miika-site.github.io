@@ -135,7 +135,7 @@ ul.navigation a {
 
     header {
         padding: 15px 0;
-        margin-top: 70px; 
+        margin-top: 100px; 
     }
 
     .desktop {
@@ -154,7 +154,7 @@ ul.navigation a {
     }
 
     ul.navigation a {
-        font-size: 20px;
+        font-size: 15px;
         padding: 10px 15px; 
         text-align: center; 
         flex: 1; 
@@ -174,7 +174,7 @@ ul.navigation a {
 
     main {
         width: 90%;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
 }
@@ -226,18 +226,4 @@ ul.navigation a {
     }
 
 }
-/* Yhteystietoja-sivu taustakuvalla */
-body.apua::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('what.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.5; /* läpinäkyvä */
-    z-index: -1; 
-}
+
