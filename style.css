@@ -134,6 +134,7 @@ ul.navigation a:hover {
         position: fixed;
         top: 0;
         padding: 8px 0;
+        flex: 1;
     }
 
     ul.navigation {
