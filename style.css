@@ -31,6 +31,10 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    background-color: #6AABD2;
+    padding: 10px; 
+    border-radius: 5px; /
+    display: inline-block; 
 }
 
 main {
@@ -115,7 +119,7 @@ ul.navigation a {
     }
 
     footer {
-        display: none; /* Piilotetaan footerin navigointi tietokoneella */
+        display: block; 
     } 
 
    h1 {
@@ -130,7 +134,7 @@ ul.navigation a {
 @media only screen and (max-width: 991px) {
 
     .desktop {
-        display: none; /* Piilotetaan navigointi pienillä näytöillä */
+        display: block; 
     }
 
     h1 {
@@ -170,7 +174,7 @@ ul.navigation a {
     }
 
     .desktop {
-        display: none; /* Piilotetaan navigointi pienillä näytöillä */
+        display: block; 
     }
 
     footer {
@@ -188,9 +192,17 @@ ul.navigation a {
 
 }
 /* Yhteystietoja-sivu taustakuvalla */
-body.apua {
-    background-image: url('kysymys.JPG');
+body.apua::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('what.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.5; /* Tämä tekee taustakuvasta läpinäkyvän */
+    z-index: -1; /* Jää taustalle kaikkien muiden elementtien taakse */
 }
