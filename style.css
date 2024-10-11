@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 15;
-    padding: 15;
+    margin: 10;
+    padding: 10;
     box-sizing: border-box;
     background-color: #b7cfdc;
 }
@@ -38,7 +38,7 @@ main {
     text-align: center;
     width: 90%;
     margin: auto;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 footer {
