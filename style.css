@@ -102,7 +102,7 @@ ul.navigation a {
     top: 0;
     left: 0;
     width: 100%;
-    display: none; /* Piilotetaan oletuksena */
+    display: block; /* Piilotetaan oletuksena */
     z-index: 1000; /* Asetetaan korkealle kerrostasolle, jotta se pysyy muiden elementtien yläpuolella */
 }
 
@@ -111,7 +111,7 @@ ul.navigation a {
 /* suuret näytöt */
 @media only screen and (min-width: 992px) {
     header {
-        margin-top: 60px; /* Lisätään marginaali headerin yläpuolelle, jotta navigointi ei peitä sitä */
+        margin-top: 100px;
     }
 
     .desktop {
@@ -135,6 +135,10 @@ ul.navigation a {
 
     .desktop {
         display: block; 
+    }
+
+    ul.navigation {
+        font-size: 20px; /* Keskikokoinen fonttikoko */
     }
 
     h1 {
@@ -174,7 +178,7 @@ ul.navigation a {
     }
 
     .desktop {
-        display: block; 
+        display: block;
     }
 
     footer {
@@ -183,11 +187,12 @@ ul.navigation a {
 
     ul.navigation {
         flex-direction: row; /* Aina vaakasuuntainen */
-        
+        font-size: 18px;
     }
 
     ul.navigation a {
-        font-size: 20px;
+        font-size: 10px;
+        padding: 15px;
     }
 
 }
@@ -203,6 +208,6 @@ body.apua::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.5; /* Tämä tekee taustakuvasta läpinäkyvän */
-    z-index: -1; /* Jää taustalle kaikkien muiden elementtien taakse */
+    opacity: 0.5; /* läpinäkyvä */
+    z-index: -1; 
 }
