@@ -15,7 +15,7 @@ header {
 
 .header-image {
     width: 100%;
-    max-width: 100%; /* Suurempi kuva index-sivun otsikossa */
+    max-width: 100%; 
     height: auto;
     margin: 20px auto;
     display: block;
@@ -49,9 +49,9 @@ footer {
     background-color: #385e72; /* Dark Misty Blue */
     padding: 10px 0;
     display: flex;
-    justify-content: center; /* Keskitetään navigointi vaakasuunnassa */
-    align-items: center; /* Keskitetään navigointi pystysuunnassa */
-    flex-direction: row; /* Navigointi on aina vaakasuunnassa */
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: row; 
     bottom: 0;
     width: 100%;
 }
@@ -59,11 +59,11 @@ footer {
 ul.navigation {
     list-style: none;
     display: flex; /* Asetetaan navigointikohteet vaakasuoraan */
-    justify-content: center; /* Kohteet keskitettynä */
+    justify-content: center; 
     align-items: center;
     padding: 0;
     margin: 0;
-    gap: 20px; /* Etäisyys linkkien välille */
+    gap: 20px; 
 }
 
 ul.navigation li {
@@ -85,16 +85,6 @@ ul.navigation a:hover {
     background-color: #567d93; /* Hover-efekti */
 }
 
-/*
-ul.navigation a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-}*/
-
-/* Navigointivalikko yläreunaan isommilla näytöillä */
 .desktop {
     background-color: #385e72; /* Dark Misty Blue */
     padding: 10px 0;
