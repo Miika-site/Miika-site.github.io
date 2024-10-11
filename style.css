@@ -91,7 +91,7 @@ ul.navigation a {
     header {
         margin-top: 60px; /* Lisätään marginaali headerin yläpuolelle, jotta navigointi ei peitä sitä */
     }
-    
+
     .desktop {
         display: block;
     }
