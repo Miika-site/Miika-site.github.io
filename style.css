@@ -33,8 +33,8 @@ h1 {
     z-index: 1;
     background-color: #6AABD2;
     padding: 10px; 
-    border-radius: 5px; /
-    display: inline-block; 
+    border-radius: 5px; 
+    display: inline-block;
 }
 
 main {
@@ -129,7 +129,7 @@ ul.navigation a {
     p, ul {
         font-size: 35px;
     }
-
+}
 /* Responsiivisuus: tabletti */
 @media only screen and (max-width: 991px) {
 
