@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 10;
-    padding: 10;
+    margin: 15;
+    padding: 15;
     box-sizing: border-box;
     background-color: #b7cfdc;
 }
@@ -15,7 +15,7 @@ header {
 
 .header-image {
     width: 100%;
-    max-width: 600px; /* Suurempi kuva index-sivun otsikossa */
+    max-width: 100%; /* Suurempi kuva index-sivun otsikossa */
     height: auto;
     margin: 20px auto;
     display: block;
@@ -73,7 +73,7 @@ ul.navigation a {
 }
 
 /* Navigointivalikko yläreunaan isommilla näytöillä */
-nav.desktop {
+.desktop {
     background-color: #385e72; /* Dark Misty Blue */
     padding: 10px 0;
     position: fixed;
@@ -92,7 +92,7 @@ nav.desktop {
         margin-top: 60px; /* Lisätään marginaali headerin yläpuolelle, jotta navigointi ei peitä sitä */
     }
     
-    nav.desktop {
+    .desktop {
         display: block;
     }
 
@@ -111,7 +111,7 @@ nav.desktop {
 /* Responsiivisuus: tabletti */
 @media only screen and (max-width: 991px) {
 
-    nav.desktop {
+    .desktop {
         display: none; /* Piilotetaan navigointi pienillä näytöillä */
     }
 
@@ -151,7 +151,7 @@ nav.desktop {
         font-size: 16px;
     }
 
-    nav.desktop {
+    .desktop {
         display: none; /* Piilotetaan navigointi pienillä näytöillä */
     }
 
