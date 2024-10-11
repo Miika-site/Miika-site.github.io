@@ -134,11 +134,22 @@ ul.navigation a {
 @media only screen and (max-width: 991px) {
 
     .desktop {
-        display: block; 
+        display: block;
+        width: 100%; 
     }
 
     ul.navigation {
-        font-size: 20px; /* Keskikokoinen fonttikoko */
+        font-size: 20px; 
+        padding: 0; 
+        margin: 0; 
+        width: 100%;
+    }
+
+    ul.navigation a {
+        font-size: 20px;
+        padding: 10px 15px; 
+        text-align: center; 
+        flex: 1; 
     }
 
     h1 {
@@ -179,6 +190,7 @@ ul.navigation a {
 
     .desktop {
         display: block;
+        width: 100%;
     }
 
     footer {
@@ -188,11 +200,16 @@ ul.navigation a {
     ul.navigation {
         flex-direction: row; /* Aina vaakasuuntainen */
         font-size: 18px;
+        padding: 0; 
+        margin: 0; 
+        width: 100%;
     }
 
     ul.navigation a {
         font-size: 10px;
-        padding: 15px;
+        padding: 10px 15px; /* Asetetaan tilaa linkkien ympärille */
+        text-align: center; /* Keskitetään teksti linkeissä */
+        flex: 1;
     }
 
 }
