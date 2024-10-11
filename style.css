@@ -137,15 +137,15 @@ ul.navigation a:hover {
 
     ul.navigation {
         flex-direction: row;
-        font-size: 20px; 
+        font-size: 18px; 
         padding: 0; 
         margin: 0; 
         width: 100%;
     }
 
     ul.navigation a {
-        font-size: 15px;
-        padding: 10px 15px; 
+        font-size: 14px;
+        padding: 8px 10px; 
         text-align: center; 
         flex: 1; 
     }
@@ -182,7 +182,7 @@ ul.navigation a:hover {
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     p, ul {
@@ -202,7 +202,7 @@ ul.navigation a:hover {
 
     ul.navigation {
         flex-direction: row; /* Aina vaakasuuntainen */
-        font-size: 18px;
+        font-size: 14px;
         padding: 0; 
         margin: 0; 
         width: 100%;
@@ -210,7 +210,7 @@ ul.navigation a:hover {
 
     ul.navigation a {
         font-size: 10px;
-        padding: 10px 15px; /* Asetetaan tilaa linkkien ympärille */
+        padding: 8px 10px; /* Asetetaan tilaa linkkien ympärille */
         text-align: center; /* Keskitetään teksti linkeissä */
         flex: 1;
     }
