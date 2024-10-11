@@ -133,12 +133,20 @@ ul.navigation a {
 /* Responsiivisuus: tabletti */
 @media only screen and (max-width: 991px) {
 
+    header {
+        padding: 15px 0;
+        margin-top: 70px; 
+    }
+
     .desktop {
         display: block;
         width: 100%; 
+        position: fixed;
+        top: 0;
     }
 
     ul.navigation {
+        flex-direction: row;
         font-size: 20px; 
         padding: 0; 
         margin: 0; 
@@ -165,7 +173,8 @@ ul.navigation a {
     }
 
     main {
-        width: 85%;
+        width: 90%;
+        margin-top: 30px;
     }
 
 }
@@ -174,10 +183,12 @@ ul.navigation a {
 @media only screen and (max-width: 600px) {
     header {
         padding: 15px 0;
+        margin-top: 60px;
     }
 
     main {
         width: 95%;
+        margin-top: 20px;
     }
 
     h1 {
@@ -191,6 +202,8 @@ ul.navigation a {
     .desktop {
         display: block;
         width: 100%;
+        position: fixed;
+        top: 0;
     }
 
     footer {
