@@ -92,7 +92,7 @@ ul.navigation a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    display: block; /* Piilotetaan oletuksena */
+    display: block; 
     z-index: 1000; /* Asetetaan korkealle kerrostasolle, jotta se pysyy muiden elementtien yläpuolella */
 }
 
@@ -133,6 +133,7 @@ ul.navigation a:hover {
         width: 100%; 
         position: fixed;
         top: 0;
+        padding: 8px 0;
     }
 
     ul.navigation {
