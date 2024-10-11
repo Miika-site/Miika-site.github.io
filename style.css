@@ -44,20 +44,22 @@ main {
 footer {
     background-color: #385e72; /* Dark Misty Blue */
     padding: 10px 0;
-    /* position: fixed; */
-    flex-direction: row; /* Aina vaakasuuntainen */
+    display: flex;
+    justify-content: center; /* Keskitetään navigointi vaakasuunnassa */
+    align-items: center; /* Keskitetään navigointi pystysuunnassa */
+    flex-direction: row; /* Navigointi on aina vaakasuunnassa */
     bottom: 0;
     width: 100%;
 }
 
 ul.navigation {
     list-style: none;
-    display: flex;
-    justify-content: space-around;
+    display: flex; /* Asetetaan navigointikohteet vaakasuoraan */
+    justify-content: center; /* Kohteet keskitettynä */
     align-items: center;
     padding: 0;
     margin: 0;
-    flex-direction: row; /* Aina vaakasuuntainen */
+    gap: 20px; /* Etäisyys linkkien välille */
 }
 
 ul.navigation li {
@@ -70,7 +72,23 @@ ul.navigation a {
     font-size: 24px;
     display: flex;
     align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #476b82; /* Hieman vaaleampi sininen */
 }
+
+ul.navigation a:hover {
+    background-color: #567d93; /* Hover-efekti */
+}
+
+/*
+ul.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}*/
 
 /* Navigointivalikko yläreunaan isommilla näytöillä */
 .desktop {
@@ -124,7 +142,7 @@ ul.navigation a {
     }
 
    footer {
-        display: block; /* Näytetään navigointi alareunassa footerin sisällä */
+        display: flex; /* Näytetään navigointi alareunassa footerin sisällä */
     }
 
     main {
@@ -156,12 +174,16 @@ ul.navigation a {
     }
 
     footer {
-        display: block; /* Näytetään navigointi alareunassa footerin sisällä */
+        display: flex; /* Näytetään navigointi alareunassa footerin sisällä */
     }
 
     ul.navigation {
         flex-direction: row; /* Aina vaakasuuntainen */
         
+    }
+
+    ul.navigation a {
+        font-size: 20px;
     }
 
 }
