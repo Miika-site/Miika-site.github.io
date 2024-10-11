@@ -4,6 +4,7 @@ body {
     padding: 10;
     box-sizing: border-box;
     background-color: #b7cfdc;
+    max-width: 100%;
 }
 
 header {
